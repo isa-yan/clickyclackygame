@@ -15,10 +15,18 @@ int main(){
     char x;
 
     std::cout<<"what selection of words would you like to try your speed out :3 "<<"\n";
-    std::cout<<"insert 'meow' if you want cats. insert 'cpp vocab' if you want cpp vocab >:3"<<"\n";
+    std::cout<<"insert 'm' if you want cats. insert 'c' if you want cpp vocab >:3"<<"\n";
     std::cin>>x;
+
+    while (x!='m' and x!='c'){
+        std::cout<<"that ain't it :c"<<"\n";
+        std::cin>>x;
+    }
+    
     if (x=='m')
         std::cout<<"so meow it is! :3";
+    else if (x=='c')
+        std::cout<<"cpp more like bada bing amiright? >W<";
 
-
+    return 0;
 }
